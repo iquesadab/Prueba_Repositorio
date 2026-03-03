@@ -9,7 +9,27 @@
 
 <body>
 
+    <h1>Cálculo del IMC</h1>
+    <!-- Formulario -->
+    <form>
+            <!-- Div y agrupo la etiqueta y la informacion porque van juntos-->
+        <div>
+            <label for="txtPeso">Peso: </label> <!-- Esta es la etiqueta antes de la cajita -->
+            <input type="number" id="txtPeso"> <!-- "number" : Le puedo agregar el dato que el usuario vaya a ingresar -->
+        </div>
 
+        <div>
+            <label for="txtEstatura">Estatura: </label>
+            <input type="number" id="txtEstatura">
+        </div>
+
+        <button id="btnCalcularIMC">Calcular IMC</button>
+
+        <section>
+            <h2>IMC:</h2>
+            <p></p>
+        </section>
+    </form>
 
     <!-- Antes de cerrar el body se enlazan los archivos de JS -->
      <script src="js/imc.js"></script> <!-- Asi enlazo un JS -->
