@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Cálculo del area de un rectángulo</h1>
+    <!-- Formulario -->
+
+    <fieldset> <!-- Me permite agregar una legenda que esta agrupa visualmente una informacion (rectangulo)-->
+        <legend>AreaRecatngulo</legend>
+        <form>
+                <!-- Div y agrupo la etiqueta y la informacion porque van juntos-->
+            <div>
+                <label for="txtBase">Base: </label> <!-- Esta es la etiqueta antes de la cajita -->
+                <input type="number" id="txtBase"> <!-- "number" : Le puedo agregar el dato que el usuario vaya a ingresar -->
+            </div>
+
+            <div>
+                <label for="txtAltura">Altura: </label>
+                <input type="number" id="txtAltura">
+            </div>
+
+            <button type="button" id="btnCalcularArea">Calcular Área</button> <!--ID que uso en js para saber que ingresan al boton-->
+        
+        </form>
+    
+
+        <section id="sctResultadoArea">
+            <h2>Área:</h2>
+            <p></p>
+        </section>
+    </fieldset>
+
+    <!-- Antes de cerrar el body se enlazan los archivos de JS -->
+     <script src="js/areaRectangulo.js"></script> <!-- Asi enlazo un JS -->
+</body>
+</html>
