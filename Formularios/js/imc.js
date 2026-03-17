@@ -55,7 +55,13 @@ function calcularIMCRetorno(){
         parrafoResultado.innerText = imc.toFixed(2);
     }
     else{
-        parrafoResultado.innerText = "No se puede calcular el IMC. Por favor revise los campos resaltados."
+        // Esta es una alerta y la link desde el html, es de una pagina externa que me permite poner alertas
+        Swal.fire({
+            title: "No se puede calcular el IMC",
+            text: "Por favor revise los campos resaltados",
+            icon: "warning",
+            confirmButtonText: "Aceptar"
+        });
     }
     
 }
