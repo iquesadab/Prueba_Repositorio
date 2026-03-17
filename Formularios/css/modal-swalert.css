@@ -1,0 +1,39 @@
+:root {
+    --fuscia: #c81f66;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+/* Personalizar el modal de SweetAlert2: .swal2-success .swal2-error .swal2-warning  .swal2-info .swal2-question */
+.swal2-icon.swal2-warning {
+    border-color: var(--fuscia);   /* Color del borde */
+    color: var(--fuscia);     /* Color del icono */
+}
+
+.swal2-confirm {
+    background-color: var(--fuscia);
+}
+
+.swal2-confirm:hover {
+    background-color: var(--fuscia);
+    box-shadow: 0 4px 8px rgba(192, 31, 102, 0.3) !important;
+}
+
+:root {
+    --fuscia: #c81f66;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+/* Personalizar el modal de SweetAlert2: .swal2-success .swal2-error .swal2-warning  .swal2-info .swal2-question */
+.swal2-icon.swal2-warning {
+    border-color: var(--fuscia);   /* Color del borde */
+    color: var(--fuscia);     /* Color del icono */
+}
+
+.swal2-confirm {
+    background-color: var(--fuscia);
+}
+
+.swal2-confirm:hover {
+    background-color: var(--fuscia);
+    box-shadow: 0 4px 8px rgba(192, 31, 102, 0.3) !important;
+}
