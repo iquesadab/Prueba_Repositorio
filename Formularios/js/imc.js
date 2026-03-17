@@ -50,7 +50,31 @@ function calcularIMCRetorno(){
     let estatura = txtEstatura.value;
 
     let imc = peso / Math.pow(estatura, 2);
-    parrafoResultado.innerText = imc.toFixed(2);
+    // parrafoResultado.innerText = imc.toFixed(2);
+    if (validarCamposVacios() === false){
+        parrafoResultado.innerText = imc.toFixed(2);
+    }
+    else{
+        parrafoResultado.innerText = "No se puede calcular el IMC. Por favor revise los campos resaltados."
+    }
+    
+}
+
+function validarCamposVacios(){
+    let error = false; // Para asumir por defecto que no existen errores
+    if (txtPeso.value === ""){
+        txtPeso.classList.add("input-error");
+        error = true;
+    } else {
+        txtPeso.classList.remove("input-error");
+    }
+    if (txtEstatura.value === ""){
+        txtEstatura.classList.add("input-error");
+        error = true;
+    } else {
+        txtEstatura.classList.remove("input-error");
+    }
+    return error;
 }
 
 // Escuchador de eventos
