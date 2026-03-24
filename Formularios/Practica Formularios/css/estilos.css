@@ -3,7 +3,7 @@
 body{
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #ffffff; /* Fondo gris de toda la página */
+    background-color: #ffffff; /* Fondo blanco de toda la página */
 }
 
 
@@ -24,7 +24,6 @@ body{
     padding: 40px; /* Espacio interno */
     width: 350px;
     text-align: center; /* Centra texto */
-    border-radius: 10px; /* Bordes redondeados */
 }
 
 /* Titulo */
